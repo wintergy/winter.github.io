@@ -95,19 +95,16 @@
 		<!-- 앵커 -->
 		<div class="glb_anchor">
 			<ul id="up">
-				<li><a href="#main_slide" class="main_icon"><span class="popup">메인</span></a></li>
-				<li><a href="#hwahae_now" class="now_icon"><span class="popup">화해는 지금</span></a></li>
-				<li><a href="#fourth" class="fourth_icon"><span class="popup">리뷰</span></a></li>
-				<li><a href="#fifth" class="fifth_icon"><span class="popup">쇼핑</span></a></li>
-				<li><a href="#sixth" class="sixth_icon"><span class="popup">랭킹</span></a></li>
-				<li><a href="#seven" class="seven_icon"><span class="popup">화플</span></a></li>
-				<li><a href="#hwahae_product" class="product_icon"><span class="popup">성분정보</span></a></li>
+				<li><a href="#main_slide" class="anchor_icon main_icon"><span class="popup">메인</span></a></li>
+				<li><a href="#hwahae_now" class="anchor_icon now_icon"><span class="popup">화해는 지금</span></a></li>
+				<li><a href="#fourth" class="anchor_icon fourth_icon"><span class="popup">리뷰</span></a></li>
+				<li><a href="#fifth" class="anchor_icon fifth_icon"><span class="popup">쇼핑</span></a></li>
+				<li><a href="#sixth" class="anchor_icon sixth_icon"><span class="popup">랭킹</span></a></li>
+				<li><a href="#seven" class="anchor_icon seven_icon"><span class="popup">화플</span></a></li>
+				<li><a href="#hwahae_product" class="anchor_icon product_icon"><span class="popup">성분정보</span></a></li>
 			</ul>			
 		</div>
 
-		<script>
-			var glb_anchor
-		</script>
 
 		<!-- 앵커 끝 -->
 		<div class="slider" id="main_slide">
@@ -178,8 +175,15 @@
 					</li><!--hwahae_now_pic-->
 		</div><!--hwahae_now-->
 
+		<!-- script : 숫자올라가기 -->
+		<!-- 1. 맨 처음 숫자 정하기
+		2. 빠르게 몇 칸씩 올라가게 만들기.
+		3. 다른 a 선택하면 다시 1로 가야 함. -->
+
 
 		<div class="fourth" id="fourth">
+			<img class="ani pencil" src="img/con-3-object-2-pencil.png" alt="pencil">
+			<img class="ani phone" src="img/con-3-object-2-cellphone.png" alt="phone">
 			<dl>
 				<dt class="con_title">써 본 사람들의 진짜 리뷰</dt>
 				<dd class="con_info">업계 최대 규모인 500만 건의 실 사용자 리뷰는<br>
@@ -274,5 +278,73 @@
 
 		</div><!--footer_wrap-->
 	</footer>
+	
+	<script>
+		const htmlElem = document.querySelector('html');
+		const anchorIcon = htmlElem.querySelectorAll('#up > li > a');
+		const anchorPopup = htmlElem.querySelectorAll('.popup');
+		const aniElem = htmlElem.querySelectorAll('#fourth > .ani');
+		// console.log(document.querySelector('html').scrollTop);
+		
+		anchorPopup[0].style.display = 'block';
+		anchorIcon[0].classList.add(':hover');
+
+		window.addEventListener("scroll", scrollWork);
+		window.addEventListener("scroll", aniWork);
+
+		//------anchor---------------------------------------//
+		// if로 좌우너비는.. 크게 잡고, 일단 y값 위치에 따라서 hover생성
+
+
+		function scrollWork(ev) {
+			ev.preventDefault();
+			//console.log(htmlElem.scrollTop);
+
+			if(htmlElem.scrollTop < 650){
+				anchorPopup[0].style.display = 'block';
+				anchorPopup[1].style.display = '';
+
+				//js에서 css로 hover주기...
+				//시도
+				//1. anchorIcon.generateEvent(' :hover');
+				//2. anchorIcon.className += ' hovered';
+				//3. styler.toggleStyle(anchorIcon, ':hover');
+
+			} else if (651 < htmlElem.scrollTop &&  htmlElem.scrollTop < 1500) {
+				anchorPopup[0].style.display = '';
+				anchorPopup[1].style.display = 'block';
+				anchorPopup[2].style.display = '';
+
+			} else if (1500 < htmlElem.scrollTop &&  htmlElem.scrollTop < 2200) {
+				anchorPopup[1].style.display = '';
+				anchorPopup[2].style.display = 'block';
+				anchorPopup[3].style.display = '';
+				
+			}
+
+		}
+
+
+
+						
+		//------연필&폰---------------------------------------//
+		function aniWork(ev) {
+			if(900 < htmlElem.scrollTop < 1099){
+				aniElem[0].classList.add('on');
+			} else if(1100 < htmlElem.scrollTop < 1900){
+				aniElem[1].classList.add('on');
+			} else { 
+				aniElem[0].classList.remove('on');
+				aniElem[1].classList.remove('on');
+			}
+		}
+
+
+
+
+
+
+		//anchorIcon.style.display = 'block';
+	</script>
 </body>
 </html>
