@@ -375,7 +375,7 @@ header{
 
 
 /*세트*/
-#up li .main_icon:hover{
+#up li .main_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-home.png);
@@ -387,7 +387,7 @@ header{
 }
 
 
-#up li .now_icon:hover{
+#up li .now_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-now.png);
@@ -399,7 +399,7 @@ header{
 }
 
 
-#up li .fourth_icon:hover{
+#up li .fourth_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-review.png);
@@ -411,7 +411,7 @@ header{
 }
 
 
-#up li .fifth_icon:hover{
+#up li .fifth_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-shop.png);
@@ -423,7 +423,7 @@ header{
 }
 
 
-#up li .sixth_icon:hover{
+#up li .sixth_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-rank.png);
@@ -435,7 +435,7 @@ header{
 }
 
 
-#up li .seven_icon:hover{
+#up li .seven_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-hwaple.png);
@@ -447,7 +447,7 @@ header{
 }
 
 
-#up li .product_icon:hover{
+#up li .product_icon.on{
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/ic-info.png);
