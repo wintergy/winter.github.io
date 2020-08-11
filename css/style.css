@@ -1,0 +1,10 @@
+
+body { width: 100%; height: 100%; background-color: #F4F4F4;}
+.wrap-color > .background { position: relative; width: 1200px; height: 800px; margin: 50px auto; background-image: url(../img/center.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+
+.wrap-color > .background > div { margin-left: 85px; padding-top: 142px; width: 100px;}
+.wrap-color > .background > div > * {float: right;}
+.wrap-color > .background > div > a:last-child {margin: 16px 0;}
+
+.wrap-color > footer { position: fixed; bottom: 0; width: 100%; height: 55px; background-color: #6294DC; opacity: 0.6;}
+.wrap-color > footer > span{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); color: white; font-size: 12px;}

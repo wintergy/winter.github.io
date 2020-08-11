@@ -1,0 +1,244 @@
+/* font */
+@font-face {
+    font-family: 'KoPubWorldDotumLight';
+    src: url(../font/KoPubWorldDotumLight.eot../font/);
+    src: url(../font/KoPubWorldDotumLight.eot?#iefix../font/) format('embedded-opentype'),
+        url(../font/KoPubWorldDotumLight.woff2) format('woff2'),
+        url(../font/KoPubWorldDotumLight.woff) format('woff'),
+        url(../font/KoPubWorldDotumLight.ttf) format('truetype'),
+        url(../font/KoPubWorldDotumLight.svg#KoPubWorldDotumLight) format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoPubWorldDotumMedium';
+    src: url(../font/KoPubWorldDotumMedium.eot);
+    src: url(../font/KoPubWorldDotumMedium.eot?#iefix) format('embedded-opentype'),
+        url(../font/KoPubWorldDotumMedium.woff2) format('woff2'),
+        url(../font/KoPubWorldDotumMedium.woff) format('woff'),
+        url(../font/KoPubWorldDotumMedium.ttf) format('truetype'),
+        url(../font/KoPubWorldDotumMedium.svg#KoPubWorldDotumMedium) format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoPubWorldDotumBold';
+    src: url(../font/KoPubWorldDotumBold.eot);
+    src: url(../font/KoPubWorldDotumBold.eot?#iefix) format('embedded-opentype'),
+        url(../font/KoPubWorldDotumBold.woff2) format('woff2'),
+        url(../font/KoPubWorldDotumBold.woff) format('woff'),
+        url(../font/KoPubWorldDotumBold.ttf) format('truetype'),
+        url(../font/KoPubWorldDotumBold.svg#KoPubWorldDotumBold) format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoPubWorldBatangLight';
+    src: url(../font/KoPubWorldBatangLight.eot);
+    src: url(../font/KoPubWorldBatangLight.eot?#iefix) format('embedded-opentype'),
+        url(../font/KoPubWorldBatangLight.woff2) format('woff2'),
+        url(../font/KoPubWorldBatangLight.woff) format('woff'),
+        url(../font/KoPubWorldBatangLight.ttf) format('truetype'),
+        url(../font/KoPubWorldBatangLight.svg#KoPubWorldBatangLight) format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoPubWorldBatangMedium';
+    src: url(../font/KoPubWorldBatangMedium.eot);
+    src: url(../font/KoPubWorldBatangMedium.eot?#iefix) format('embedded-opentype'),
+        url(../font/KoPubWorldBatangMedium.woff2) format('woff2'),
+        url(../font/KoPubWorldBatangMedium.woff) format('woff'),
+        url(../font/KoPubWorldBatangMedium.ttf) format('truetype'),
+        url(../font/KoPubWorldBatangMedium.svg#KoPubWorldBatangMedium) format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'KoPubWorldBatangBold';
+    src: url(../font/KoPubWorldBatangBold.eot../font/);
+    src: url(../font/KoPubWorldBatangBold.eot?#iefix../font/) format('embedded-opentype'),
+        url(../font/KoPubWorldBatangBold.woff2) format('woff2'),
+        url(../font/KoPubWorldBatangBold.woff) format('woff'),
+        url(../font/KoPubWorldBatangBold.ttf) format('truetype'),
+        url(../font/KoPubWorldBatangBold.svg#KoPubWorldBatangBold) format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* { font-family: 'KoPubWorldDotumMedium', Arial, Helvetica, sans-serif;}
+.blind{ z-index: -1px; overflow: hidden; position: absolute; height: 1px; width: 1px; text-indent: -9999em;}
+
+/* layout */
+header { z-index: 8; border: 1px solid blue; background-color: white; border: 1px solid gray; width: 100%; height: 80px; position: fixed;}
+nav { width: 1200px; margin: 0 auto; position: relative;}
+main { padding-top: 80px; width: 100%;}
+main > div { margin: 0 auto;}
+
+
+
+/* header */
+header > nav > a { 
+    position: absolute; 
+    top: 20px; border: 1px solid red; 
+    float: left; 
+    width: 116px; height: 20px; 
+    background-image: url(../img/logo_black.svg); 
+    background-repeat: no-repeat; margin: 0 30px; 
+    top: 30px;
+}
+header > nav > div { left: 0; position: fixed; width: 100%; margin-top: 81px;}
+header > nav > div > ul {
+    border: 2px solid brown;
+    position: absolute;
+    right: 0;
+    top: -81px;
+    height:80px;
+    width: 1200px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: right;
+}
+header > nav > div > ul > li { 
+    border: 1px solid lime;
+    display: inline-block;
+}
+header > nav > div > ul > li > ul { 
+    border: 2px solid orange; 
+    float: right; 
+    margin: 50px 20px;
+    display: none;
+}
+header > nav > div > ul > li > a { 
+    border: 2px solid blueviolet;
+    position: relative;
+    width: 100px;
+    right: 0;
+}
+
+header > nav > div > ul > li > ul > li { margin: 10px; }
+
+header > nav > div > ul > .nav-2-goods > ul { display: none;}
+header > nav > div > ul > .nav-3-client > ul { display: none;}
+/* header > nav > ul > li > ul>li { background-color: green; } */
+
+
+/*contents common*/
+/*요소들 중에 공통적으로 먹히는 것들.*/
+main > div { position: relative; margin: 0 auto; width: 1200px; height: 750px;}
+main > div > h2 p { width: 400px;}
+main > div > h2 { font-size: 40px; margin-bottom: 25px;}
+main > div > p { color: #666666; font-size: 15px; line-height: 1.6; margin-bottom: 30px;}
+main > div > button { color: #333333; background-color: #f6f6f6; font-size: 16px; height: 56px; border: none; border-radius: 0.8rem;}
+.devider{ width: 100%; height: 32px; background-color: #FAFAFA;}
+
+/*같은 클래스끼리 묶러보기. 접두사.. 사진파일도.*/
+
+.nav-1-bank > a:hover header > nav > div{display: block;}
+
+
+/* main */
+main > .main-1-KB { border: 1px solid blue; position: relative; width: 100%; height: 720px; background-color: #FEDE22;}
+main > .main-1-KB > div { position: relative; width: 1200px; margin:0 auto; height: 884px; background-image: url(../img/main-bg2.png); background-size: cover; background-position: center;}
+main > .main-1-KB > div > * { margin-left: 90px;}
+main > .main-1-KB > div > h2 { color: #333333; display: inline-block; margin-bottom: 10px; border: 1px solid red; margin-top: 20%; font-size: 49px;}
+main > .main-1-KB > div > p { margin-bottom: 60px; border: 1px solid red; font-size: 17px;}
+main > .main-1-KB > div > button { border: none; border-radius: 0.8rem; width: 180px; line-height: 58px; font-size: 16.2px; font-weight: 700; background-color: white;}
+main > .main-1-KB > div > button > span { position: relative; border: 1px solid red; width: 25px; height: 25px; background-image: url(../img/img_kabang_200417.png); background-position: -343px -292px;}
+main > .main-1-KB > div > .btn-right { margin-left: 10px;}
+main > .main-1-KB > div > .btn-right > span { background-position: -374px -292px;}
+
+
+main > .main-2-withdrawal {margin-top: 150px;}
+main > .main-2-withdrawal > h2 { padding-top: 200px; margin-left: 700px;}
+main > .main-2-withdrawal > img { position: absolute; top: 0; left: 10%; width: 473px;}
+main > .main-2-withdrawal > button { width: 258px; margin-left: 700px;}
+main > .main-2-withdrawal > p { margin-left: 700px;}
+
+
+main > .main-3-savings > p { width: 600px;}
+main > .main-3-savings > h2 p { border: 1px solid red;}
+main > .main-3-savings > h2 p button { margin-left: 100px;}
+main > .main-3-savings > button { width: 158px;}
+main > .main-3-savings > .circle { position: absolute; 
+   left: 100px; top: 45%; width: 440px;}
+main > .main-3-savings > img:last-child { 
+    position: absolute; width: 409px;
+    right: 5%; top: -100px;
+}
+main > .main-3-savings > .btn-3-right { margin-left: 10px;}
+
+
+
+main > .main-4-moim > h2 { padding-top: 200px; margin-left: 700px;}
+main > .main-4-moim > p { margin-left: 700px;}
+main > .main-4-moim > img { position: absolute; 
+    width: 459px; left: 10%; top: 50px;}
+main > .main-4-moim > button { margin-left: 700px; width: 258px;}
+
+
+main > .main-5-26weeks > img { position: absolute; width: 492px; top: 20%; left: 50%;}
+main > .main-5-26weeks > h2 { padding-top: 200px; margin-left: 100px;}
+main > .main-5-26weeks > p { margin-left: 100px;}
+main > .main-5-26weeks > button { margin-left: 100px; width: 258px;}
+
+
+main > .main-6-foreign > .background-image { margin-top: 100px; width: 642px; height: 343px; background-image: url(../img/home_map.png);}
+main > .main-6-foreign > img { position: absolute; width: 408px; top: -10%; left: 10%;}
+main > .main-6-foreign > h2 { position: absolute; top: 15%; margin-left: 700px;}
+main > .main-6-foreign > p { position: absolute; top: 40%; margin-left: 700px;}
+main > .main-6-foreign > button { position: absolute; top: 55%; margin-left: 700px; width: 258px;}
+
+
+main > .main-7-loan { text-align: center; height: 930px; width: 100%; background-color: #559cde;}
+main > .main-7-loan > * { color: #ffffff;}
+main > .main-7-loan > h2 { padding-top: 150px;}
+main > .main-7-loan > p { color: rgba(225, 225, 225, 0.8);}
+main > .main-7-loan > img { position: absolute; width: 429px; left: 50%; bottom: 0; transform: translate(-50%);}
+main > .main-7-loan > button { width: 166px; height: 52px; color: #ffffff; background-color:rgba(225, 225, 225, 0.3);}
+
+
+main > .main-8-checkcard { text-align: center; height: 1062px;}
+main > .main-8-checkcard > h2 { padding-top: 150px;}
+main > .main-8-checkcard > button { width: 258px; margin-bottom: 80px;}
+main > .main-8-checkcard img { transform: translate(-50%); position: absolute;}
+
+
+main > .main-9-ITtech { text-align: center; width: 100%; background-color: #f9f9f9; height: 1175px;}
+main > .main-9-ITtech > h2 { padding-top: 160px;}
+main > .main-9-ITtech > img { width: 1020px;}
+main > .main-9-ITtech > hr { margin: 40px auto 150px; width: 100px; height: 2px; background-color: black; border: none;}
+main > .main-9-ITtech > ul > li { margin-top: 50px; border: 1px solid red; width: 250px; display: inline-block;}
+main > .main-9-ITtech > ul > li:nth-child(2) {margin-right: 250px;}
+main > .main-9-ITtech > ul > li > ul > b { color: #111111; font-size: 20px; display: inline-block; margin-bottom: 10px;}
+main > .main-9-ITtech > ul > li > ul > li { color: #666666; font-size: 14px;}
+
+
+footer { padding: 0 0 20px; background-color: #eeeeee; height: 160px; font-size: 12px;}
+footer > div { width: 1200px; margin: 0 auto;}
+footer > div > p { padding: 37px 0 12px;}
+footer > div .bold { color: #000000; font-weight: 700;}
+footer > div > address { font-style: normal;}
+footer > div > p > a { color: #666666;}
+footer > div > p > .devider { display: inline-block; width: 1.5px; height: 10px; background-color: #d8d8d8; margin: 3px 15px 0;}
+footer > div > address > span { margin: 0 8px 0 5px; font-weight: 400; font-size: 11px; color: #888888;}
+footer > div > address > span:last-child { font-size: 10px;}
+
+footer > div > .footer-bottom { margin-top: 20px; height: 33px;}
+footer > div > .footer-bottom > a { font-size: 14px; color: #000000;}
+footer > div > .footer-bottom > a > img { margin-right: 8px;}
+footer > div > .footer-bottom > a > span { display: inline-block; margin-top: 4px;}
+footer > div > .footer-bottom > div { float: right; width: 300px; margin-top: 5px;}
+footer > div > .footer-bottom > div > i { float: right; opacity: 0.3; font-size: 20px; padding: 0 8px;}
