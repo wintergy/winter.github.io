@@ -583,18 +583,17 @@ header{
 		position: absolute;
 		top: 40%;
 		width: 100%;
-		border: 1px solid blue;
 	}
 
 
 
-	#fourth > .ani{position: relative; width: 1200px; margin: 0 auto; border: 1px solid red;}
+	#fourth > .ani{position: relative; width: 1200px; margin: 0 auto;}
 
 	#fourth > .ani.pencil {width: 364px; top: -20%; right: -60%; opacity: 0;}
-	#fourth > .ani.phone {width: 424.16px; top: 50%; left: -20%; z-index: 999; opacity: 0;}
+	#fourth > .ani.phone {width: 424.16px; top: 50%; left: 0; z-index: 999; opacity: 0;}
 
-	#fourth > .ani.pencil.on {opacity: 1; transition-duration: 3s;}
-	#fourth > .ani.phone.on {opacity: 1; transition-duration: 5s;}
+	#fourth > .ani.pencil.on {opacity: 1; transition-duration: 2s;}
+	#fourth > .ani.phone.on { opacity: 1; transition-duration: 2s;}
 
 
 
