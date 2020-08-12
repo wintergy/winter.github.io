@@ -988,7 +988,7 @@ footer{
 
 	#fourth > .ani.pencil {display: none;}
 	#fourth > .ani.phone {display: none;}
-
+/*근데 폰이 왼쪽 기준으로 해서 걸려버리는 거니까 오른쪽 마진 %로 하면 아마 괜찮지 않을까?*/
 
 	.fifth{
 		height: 480px;
